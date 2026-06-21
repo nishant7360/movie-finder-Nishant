@@ -14,7 +14,7 @@ import useFavorites from "../hooks/useFavorites.js";
 import { searchMovies } from "../lib/omdb.js";
 
 export default function Home() {
-  const [query, setQuery] = useState("batman");
+  const [query, setQuery] = useState("");
   const [debouncedQuery, setDebouncedQuery] = useState(query);
   const [movies, setMovies] = useState([]);
   const [page, setPage] = useState(1);
